@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+
+  line-height: 1.5;
+}
+
+/* .container {
+  display: flex;
+  gap: 40px;
+} */
+
+.article {
+  width: 825px;
+  margin: 50px auto;
+  border: 5px solid #000;
+  position: relative;
+}
+
+.sale {
+  font-size: 12px;
+  color: #fff;
+  background-color: rgb(209, 19, 19);
+  font-weight: bold;
+  padding: 8px 15px;
+  letter-spacing: 2px;
+  display: inline-block;
+
+  position: absolute;
+  top: -17px;
+  left: -34px;
+}
+
+.title,
+.details-title {
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  background-color: #f7f7f7;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 15px;
+
+  grid-column: 1/-1;
+}
+
+.details-title {
+  font-size: 16px;
+
+  margin-bottom: 14px;
+}
+
+.product-info {
+  /* width: 243px; */
+  /* flex: 1; */
+
+  margin-top: 20px;
+}
+
+.price-shipping {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.shipping {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+}
+
+.more:link,
+.more:visited {
+  color: #000;
+  margin-bottom: 30px;
+
+  display: inline-block;
+}
+
+.more:hover,
+.more:active {
+  text-decoration: none;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+}
+
+.color {
+  width: 22px;
+  height: 22px;
+}
+
+.color-1 {
+  background-color: #000;
+}
+
+.color-2 {
+  background-color: #ec2f2f;
+}
+.color-3 {
+  background-color: #f0bf1e;
+}
+.color-4 {
+  background-color: #90cc20;
+}
+.color-5 {
+  background-color: #885214;
+}
+.color-6 {
+  background-color: blue;
+}
+
+.product-details {
+  /* width: 243px; */
+  /* flex: 1; */
+  margin-top: 20px;
+}
+
+.details-list {
+  list-style: square;
+  line-height: 1.5;
+}
+
+.list-child {
+  margin-left: 18px;
+}
+
+.details-list li {
+  margin-bottom: 10px;
+}
+
+.button {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  border-top: 4px solid #000;
+
+  grid-column: 1/-1;
+}
+
+.button:link {
+  color: #fff;
+}
+
+.button:visited {
+  color: #fff;
+}
+
+.button:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.button:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.ready {
+  margin-bottom: 10px;
+}
+
+/* css grid */
+
+article {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
